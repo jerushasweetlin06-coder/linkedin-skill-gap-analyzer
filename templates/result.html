@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <h1>Skill Gap Analysis Result</h1>
+
+    <h2>Target Role: {{ job_role }}</h2>
+
+    <h3>Match Percentage: {{ match_percentage }}%</h3>
+
+    <h3>Matched Skills:</h3>
+    <ul>
+        {% for skill in matched_skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Missing Skills:</h3>
+    <ul>
+        {% for skill in missing_skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <br>
+    <a href="/">Go Back</a>
+
+</body>
+</html>

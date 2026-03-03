@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6ff;
+    text-align: center;
+    padding-top: 60px;
+}
+
+h1 {
+    color: #1f4fd8;
+}
+
+input, textarea {
+    width: 300px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1f4fd8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #163bb5;
+}

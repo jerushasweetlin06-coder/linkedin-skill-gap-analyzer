@@ -1,0 +1,7 @@
+job_role,required_skills
+Data Analyst,"Python, SQL, Excel, Power BI, Statistics, Data Visualization"
+Machine Learning Engineer,"Python, Machine Learning, Deep Learning, TensorFlow, Scikit-learn, Statistics"
+Web Developer,"HTML, CSS, JavaScript, React, Node.js, Git"
+Backend Developer,"Python, Flask, API Development, SQL, Git, Docker"
+Frontend Developer,"HTML, CSS, JavaScript, React, UI/UX"
+Cloud Engineer,"AWS, Docker, Kubernetes, Linux, Networking"
