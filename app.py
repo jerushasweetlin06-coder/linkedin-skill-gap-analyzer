@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import os
 
 app = Flask(__name__)
 
@@ -16,7 +17,7 @@ def analyze():
     # Convert skills to list
     user_skills_list = [skill.strip().lower() for skill in user_skills.split(",")]
 
-    # Example required skills (you can expand this later)
+    # Example required skills
     required_skills_dict = {
         "data scientist": ["python", "machine learning", "statistics", "sql"],
         "web developer": ["html", "css", "javascript", "flask"],
@@ -45,4 +46,5 @@ def analyze():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
